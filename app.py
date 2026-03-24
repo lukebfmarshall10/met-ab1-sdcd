@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect, url_for, session, f
 app = Flask(__name__)
 app.secret_key = "changeme-secret-key"
 
-APP_TITLE = "ChangeMe"
+APP_TITLE = "ShopEase Cloud 2.0 LM"
 
 # Fake product data
 products = [
@@ -12,6 +12,7 @@ products = [
     {"id": 3, "name": "Python Book", "price": 39.99, "category": "Books"},
     {"id": 4, "name": "Coffee Mug", "price": 12.99, "category": "Home"},
     {"id": 5, "name": "Mechanical Keyboard", "price": 149.99, "category": "Electronics"},
+    {"id": 6, "name": "Laptop Basic", "price": 699.99, "category": "Electronics"},
 ]
 
 # Fake users (username: password)
