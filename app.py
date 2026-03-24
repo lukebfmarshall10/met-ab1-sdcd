@@ -76,7 +76,7 @@ def cart():
         product_id = int(request.form.get("product_id"))
         session["cart"] = session.get("cart", []) + [product_id]
         session.modified = True
-        flash("Item added to cart!", "success")
+        flash("Item added to your basket!", "success")
         return redirect(url_for("cart"))
     cart_items = [p for p in products if p["id"] in session["cart"]]
     total = sum(p["price"] for p in cart_items)
